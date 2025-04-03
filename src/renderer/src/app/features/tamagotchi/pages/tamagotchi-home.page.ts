@@ -17,6 +17,7 @@ import { MonsterCommandService } from "../../../core/services/monsterComand.serv
           [hunger]="monster()?.Hunger ?? 0"
           [energy]="monster()?.Energy ?? 0"
           [happiness]="monster()?.Happiness ?? 0"
+          [name]="monster()?.Name ?? '???'"
         ></app-hud>
 
         <app-tamagotchi-actions
