@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Digital-GoMonster</title>
+</head>
+<body>
+    <h1 id="msg">Preparando...</h1>
+
+    <script>
+        const msg = window.digitalGoAPI.sayHello();
+        msg.then(result => {
+            document.getElementById('msg').innerText = result;
+        });
+
+        const res = window.digitalGoAPI.getMonster();
+        res.then(result => {
+            alert(JSON.stringify(result))
+        })
+    </script>
+</body>
+</html>
